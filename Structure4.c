@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+//error checking when initialise member while declaration
 struct Demo
 {
     int no = 11;
