@@ -10,7 +10,7 @@ struct Demo
 struct PPA
 {
     int X;
-    struct Demp dobj;
+    struct Demo dobj;
     int Y;
 
 };
