@@ -8,3 +8,7 @@ int main()
 
     return 0;
 }
+
+
+//g++ Demo.cpp -o Myexe
+//./Myexe
