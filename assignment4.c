@@ -1,40 +1,35 @@
 #include<stdio.h>
 int main()
 {
-// int arr[6] = {10,20,30};
-// int no = 2;
+    // char ch='A';
+    // char *p=&ch;
+    // char **q=&p;
+    // char **x=&p;
+    // char *y=&ch;
+    // int d;
 
-// printf("1-%d\n",arr[0]);
-// printf("2-%d\n",arr[no]);
-// printf("3-%d\n",arr[3-1]);
-// printf("4-%d\n",arr);
-// printf("5-%d\n",arr+1);
-// printf("6-%d\n",(&arr)+1); //
-// printf("7-%d\n",arr+3);
-// printf("8-%d\n",&arr[3]);
-// printf("9-%d\n",arr[4]);
-// printf("10-%d\n",&arr[5]);
-// printf("11-%d\n",2[arr]);
+    // printf("%d\n",&ch);          //100
+    // printf("%d\n",p);            //100
+    // printf("%d\n",&p);           //200
+    // printf("%d\n",&q);           //300
+    // //printf("%d\n",d);            //ERROR
+    // printf("%c\n",**x);          //A
+    // printf("%c\n",**q);          //A
+    // printf("%d\n",*q);           //100
 
 
 
-double no = 3.14;
-double *a =&no;
-double **b = &a;
-double ***c= &b;
-double ****d =&c;
- 
-printf("%d\n", sizeof(no));
-printf("%d\n", sizeof(a));
-printf("%d\n", sizeof(b));
-printf("%d\n", sizeof(c));
-printf("%d\n", sizeof(d));
-printf("%d\n", sizeof(**d));
-printf("%d\n", sizeof(****d));
-printf("%d\n", sizeof(*a));
-printf("%d\n", sizeof(***c));
-printf("%d\n", sizeof(**c));
+    int arr[] = {10,20,30,40,50};
+    int *p = arr;
 
+    printf("%d\n",arr);          //100
+    printf("%d\n",&arr);            //100
+    printf("%d\n",p);           //200
+    printf("%d\n",*p);           //300
+    printf("%c\n",sizeof(arr));          //A
+    printf("%c\n",sizeof(arr[0]));          //A
+    printf("%d\n",sizeof(p));           //100
+    printf("%d\n",sizeof(*p)); 
 
     return 0;
 }
