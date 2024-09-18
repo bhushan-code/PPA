@@ -1,9 +1,12 @@
-#include<stdio.h>
-int main()
-{
-    int arr[3] = {22,};
-    printf("%d\n", arr[0]);
+// Online C compiler to run C program online
+#include <stdio.h>
 
-    printf("%d\n", arr[1]);    printf("%d\n", arr[2]);
+int main() {
+    int arr[6] = {1,2,3};
+    int * const p = arr;
+    
+    printf("%d\n", arr);
+    printf("%d\n", p);
+    
     return 0;
 }
