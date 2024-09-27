@@ -14,11 +14,26 @@ class Demo
             No2 = 20;
         }
 
+        Demo(int A, int B, int C, int D) : No3(C), No4(D)
+        {
+            No1 = A;
+            No2 = B;
+        }
+
 };
 
 int main()
 {
-    Demo obj;
+    Demo obj1;
+    cout<<obj1.No1<<"\t"<<obj1.No2<<"\t"<<obj1.No3<<"\t"<<obj1.No4<<"\n";
 
+    Demo obj2(11,21,51,101);
+    cout<<obj2.No1<<"\t"<<obj2.No2<<"\t"<<obj2.No3<<"\t"<<obj2.No4<<"\t";
+
+    obj1.No1++;
+    obj1.No2++;
+    obj1.No3++;     //error
+    obj1.No4++;     //error
+    
     return 0;
 }
