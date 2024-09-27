@@ -5,19 +5,19 @@ class Base
 {
     public:
         int i,j;
-        virtual void Fun()                                  
+        virtual void Fun()      //1000                                  
         {
             cout<<"Inside Base Fun\n";
         }
-        void Gun()
+        void Gun()              //2000
         {
             cout<<"Inside Base Gun\n";
-        }
-        virtual void Sun()
+        }   
+        virtual void Sun()      //3000
         {
             cout<<"Inside Base Sun\n";
         }
-        virtual void Run()
+        virtual void Run()      //4000
         {
             cout<<"Inside Base Run\n";
         }
@@ -28,21 +28,21 @@ class Derived : public Base
     
     public:
         int x,y;
-        void Fun()                                 
+        virtual void Fun()      //5000                            
         {
                 cout<<"Inside Derived Fun\n";
         }
-        void Gun()                                  
+        void Gun()              //6000                    
         {
                 cout<<"Inside Derived Gun\n";
         }
-        void Sun()                                  
-        {
-                cout<<"Inside Derived Sun\n";
-        }
-        void Mun()                                  
+        virtual void Mun()      //7000                            
         {
                 cout<<"Inside Derived Mun\n";
+        }
+        void Run()              //8000                            
+        {
+                cout<<"Inside Derived Run\n";
         }
 };
 
