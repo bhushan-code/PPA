@@ -1,7 +1,6 @@
 
 class Marvellous
 {
-    
     public static void main(String Arg[])
     {
         System.out.println("Jay Ganesh...");
@@ -10,4 +9,4 @@ class Marvellous
 
 //javac Marvellous.java
 
-//java Marvellous
+//java Marvellous.java
