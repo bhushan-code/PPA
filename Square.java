@@ -8,4 +8,4 @@ public class Square
     }
 }
 
-javac -d . Square.java
+//javac -d . Square.java
