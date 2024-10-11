@@ -3,7 +3,7 @@
 
 import Marvellous.Circle;
 
-// import Marvellous.Infosystems.Square;
+import Marvellous.Infosystems.Square;
 
 class PackageDemo
 {
@@ -17,11 +17,11 @@ class PackageDemo
 
         System.out.println("Area of Circle is : "+Ans);
 
-        // Square sobj = new Square();
+        Square sobj = new Square();
 
-        // Ans = sobj.SquareArea(10.5f);
+        Ans = sobj.SquareArea(10.5f);
 
-        // System.out.println("Area of square is : "+Ans);
+        System.out.println("Area of square is : "+Ans);
         
     }
 }
