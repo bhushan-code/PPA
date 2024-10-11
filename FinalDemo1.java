@@ -2,21 +2,16 @@ class FinalDemo1
 {
     public static void main(String Arg[])
     {
-        public int No1;
-
-        public void Fun()
-        {
-            System.out.println("Inside the Fun");
-        }
+        Demo dobj = new Demo();
     }
 }
-
-class Derived extends FinalDemo1
+final class Demo
 {
-    public int No3;
+    public int No1;
+    public int No2;
+} 
 
-    public void Gun()
-    {
-        System.out.println("Inside the Gun");
-    }
+class Hello extends Demo
+{
+   
 }
