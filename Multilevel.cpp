@@ -72,28 +72,9 @@ class DerivedX : public Derived
 
 int main()
 {
-    
-    DerivedX dobj;
-    //constructor : Base -> Derived -> DerivedX
-    
-    cout<<"Inside main Function\n";
-
-    cout<<"Size of base class "<<sizeof(Base)<<"\n";                    //8
-    cout<<"Size of Derived class "<<sizeof(Derived)<<"\n";              //16
-    cout<<"Size of DerivedX class "<<sizeof(DerivedX)<<"\n";            //24
-
-
-    cout<<dobj.i<<"\n"; //10
-    cout<<dobj.j<<"\n"; //20
-    cout<<dobj.x<<"\n"; //30
-    cout<<dobj.x<<"\n"; //40
-    cout<<dobj.a<<"\n"; //50
-    cout<<dobj.b<<"\n"; //60
-
-    dobj.Fun(); //Inside Fun
-    dobj.Gun(); //Inside Gun
-    dobj.Sun(); //Inside Sun
-
-    //Destructor : DerivedX -> Derived -> Base
+    Base bobj;
+    Derived dobj;
+    DerivedX dxobj;
+   //Destructor : DerivedX -> Derived -> Base
     return 0;
 }

@@ -51,18 +51,18 @@ class Derived : public Base
 
 int main()
 {
-    
+    Base bobj;
     Derived dobj;
     
-    cout<<"Inside main Function\n";
+    //cout<<"Inside main Function\n";
 
-    cout<<dobj.i<<"\n";
-    cout<<dobj.j<<"\n";
-    cout<<dobj.x<<"\n";
-    cout<<dobj.y<<"\n";
+    // cout<<dobj.i<<"\n";
+    // cout<<dobj.j<<"\n";
+    // cout<<dobj.x<<"\n";
+    // cout<<dobj.y<<"\n";
 
-    dobj.Fun();
-    dobj.Gun();
+    // dobj.Fun();
+    // dobj.Gun();
 
 
 
