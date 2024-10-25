@@ -30,7 +30,6 @@ class ExceptionDemo3
         {
             System.out.println("Inside finally block");
         }
-        Ans = No1 / No2;
 
         System.out.println("Division is : "+Ans);
         
