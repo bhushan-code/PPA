@@ -7,3 +7,5 @@ public class Circle
         return 3.14f * R * R;
     }
 }   
+
+//javac -d . Circle.java
