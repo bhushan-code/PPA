@@ -4,6 +4,7 @@ class ObjectDemo3
     public static void main(String A[])
     {
         Demo obj = new Demo();
+        System.out.println(obj.hashCode());
 
         obj = null;
 

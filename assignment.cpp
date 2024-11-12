@@ -1,60 +1,104 @@
-#include<iostream>
-using namespace std;
-
-// class Arithematic
+// class base
 // {
 //     public:
-//     int No1;
-//     int No2;
+//     int i;
+//     float f;
 
-//         Arithematic(int A, int B)
-//         {
-//             No1 = A;
-//             No2 = B;
-//         }
-
-//         int Addition()
-//         {
-//             int Ans = 0;
-//             Ans = No1 + No2;
-//             return Ans;
-//         }
-
-//         int Substraction()
-//         {
-//             int Ans = 0;
-//             Ans = No1 - No2;
-//             return Ans;
-//         }
+//     virtual void gun() = 0;
+//     virtual void sun() = 0;
+//     virtial void run() //1000
+//     {
+//         cout<<"Base run";
+//     }
 // };
 
+// class Derived : public Base
+// {
+//     public:
+//     int i;
+//     double d;
 
+//     void sun()
+//     {
+//         cout<<"Derived sun";
+
+//     }
+//     void dun()
+//     {
+//         cout<<"Derived Fun";
+
+//     }
+//     void gun()
+//     {
+//         cout<<"Derived gun";
+
+//     }
+//     virtual void mun90
+//     {
+//         cout<<"Derived mun";
+
+//     }
+// };
+
+// int main()
+// {
+//     Base *bp = NULL;
+//     Derived dobj;
+//     bp =&dboj
+// }
+
+
+
+
+
+
+
+
+
+
+class Base
+{
+public: int i; float f;
+virtual void gun() = 0;
+virtual void sun() = 0;
+virtual void run()
+// 1000
+{
+cout<<"Base run";
+}
+};
+class Derived: public Base
+{
+public:
+int i;
+double d;
+void sun()
+// 2000
+{
+cout<<"Derived sun";
+}
+void fun()
+// 3000
+{
+cout<<"Derived fun";
+}
+
+void gun()
+// 4000
+{
+cout<<"Derived gun";
+}
+virtual void mun()
+// 5000
+{
+cout<<"Derived mun";
+}
+};
 int main()
 {
-    int no = 11;
-    int *p = &no;
-    int *q = &p;
-
-    cout<<**q<<"\n";
-    cout<<*p<<"\n";
-
-
-
-    // int iValue1 = 0, iValue2 = 0, iRet = 0;
-
-    // cout<<"Enter First Number : \n";
-    // cin>>iValue1;
-
-    // cout<<"Enter Second Number : \n";
-    // cin>>iValue2;
-
-    // Arithematic obj(iValue1,iValue2);
-
-    // iRet = obj.Addition();
-    // cout<<"Addition is : "<<iRet<<" \n";
-
-    // iRet = obj.Substraction();
-    // cout<<"Substraction is : "<<iRet<<" \n";
-    
-    return 0;
+Base *bp = NULL;
+Derived dobj;
+bp = &dobj;
+bp -> fun(); bp -> gun(); bp/-> sun(); bp->run(); bp -> mun();
+return 0;
 }
