@@ -1,7 +1,7 @@
 import java.sql.*;          // 1
 import java.sql.SQLException;
 
-class JDBC
+class JDBC2
 {
     public static void main(String arg[]) throws Exception
     {
