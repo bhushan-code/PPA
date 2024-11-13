@@ -5,10 +5,10 @@ class JDBC2
 {
     public static void main(String arg[]) throws Exception
     {
-        String URL = "jdbc:mysql://localhost:3306/vamp";
+        String URL = "jdbc:mysql://localhost:3306/PPA51";
         String Username = "myuser";
         String Password = "mypassword";
-        String Query = "select * from student";
+        String Query = "select Customer.CID, Customer.Name, OrderX.Product from Customer right join OrderX on Customer.CID = OrderX.CID";
 
         Connection cobj = DriverManager.getConnection(URL,Username,Password);   // 2
         
@@ -18,10 +18,9 @@ class JDBC2
 
         while(robj.next())          // 5
         {
-            System.out.println("RID : "+robj.getInt("rno"));
-            System.out.println("Name : "+robj.getString("name"));
-            System.out.println("City : "+robj.getString("city"));
-            System.out.println("Marks : "+robj.getInt("marks"));                                    
+            System.out.println("CID : "+robj.getInt("CID"));
+            System.out.println("Name : "+robj.getString("Name"));
+            System.out.println("Product : "+robj.getString("Product"));
         }
     }
 }
