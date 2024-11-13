@@ -45,8 +45,9 @@ close databse
 
 seperate terminal
 
-javac Database.java
-jar file same folde
+javac JDBC.java
 
-java -cp .:mysql-connector-j-9.1.0.jar Database.java
+jar file same folder
+
+java -cp .:mysql-connector-j-9.1.0.jar JDBC.java
 */
