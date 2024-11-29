@@ -20,3 +20,10 @@ class ExceptionDemo1
         
     }
 }
+
+
+/*
+5/0
+
+java.lang.ArithmeticException: / by zero
+*/

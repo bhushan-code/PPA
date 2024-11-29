@@ -51,7 +51,7 @@ int main()
 
     Array <char>aobj2(5);
     aobj2.Accept();
-    aobj2mysql-connector-j-9.1.0.Display();
+    aobj2.Display();
 
     return 0;
 }

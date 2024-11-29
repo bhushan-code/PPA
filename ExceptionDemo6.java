@@ -1,14 +1,5 @@
 import java.util.Scanner;
 
-class AgeInvalidException extends Exception
-{
-    public AgeInvalidException(String str)
-    {
-        super(str);
-        System.out.println("Inside Constructor");
-    }
-}
-
 class ExceptionDemo6
 {
     public static void main(String A[])
@@ -39,5 +30,15 @@ class ExceptionDemo6
         System.out.println("Inside finally");
        }
        System.out.println("End of program");
+    }
+}
+
+
+class AgeInvalidException extends Exception
+{
+    public AgeInvalidException(String str)
+    {
+        super(str);
+        System.out.println("Inside Constructor");
     }
 }

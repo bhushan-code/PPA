@@ -17,3 +17,11 @@ class ExceptionDemo1
         
     }
 }
+
+
+
+/*index 6
+
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 5
+
+*/
